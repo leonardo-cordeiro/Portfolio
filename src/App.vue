@@ -7,12 +7,14 @@
     <HomeSection />
 
     <!-- About  -->
+    <AboutSectionVue />
   </main>
 </template>
 
 <script setup>
-import HomeSection from './components/HomeSection.vue'
-import NavBar from './components/NavBar.vue'
+import AboutSectionVue from '@/components/AboutSection.vue'
+import HomeSection from '@/components/HomeSection.vue'
+import NavBar from '@/components/NavBar.vue'
 </script>
 
 <style>

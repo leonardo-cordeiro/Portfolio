@@ -124,7 +124,7 @@
 
 .content-carrousel img:hover {
   transform: scale(1.2);
-  transition: all 300ms;
+  transition: all 500ms;
 }
 
 @keyframes rotar {
