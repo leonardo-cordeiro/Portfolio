@@ -47,7 +47,7 @@ import CarrouselSection from './CarrouselSection.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #00c6fb 31%, #005bea 80%);
+  background: linear-gradient(135deg, #3403b7 31%, #07034d 80%);
   height: 100vh;
   padding-top: 5rem;
   width: 100%;

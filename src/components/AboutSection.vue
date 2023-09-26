@@ -1,49 +1,77 @@
 <template>
-  <div class="wrap">
-    <div class="title">
-      <h1>About me</h1>
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Olá, sou Leonardo Gama</h2>
+          <p>
+            Sou um apaixonado por desenvolvimento Front-End, criando experiências digitais incríveis
+            com Vue.js.
+          </p>
+          <p>
+            Minha jornada no mundo da tecnologia é impulsionada pela determinação, foco inabalável e
+            paixão por colaborar em equipe. Com experiência adquirida em quase três anos nos Estados
+            Unidos, alcancei um alto nível de proficiência em inglês. Além de codificar, minha
+            dedicação à colaboração e minha perspectiva global me permitem interagir eficazmente com
+            diversas partes interessadas.
+          </p>
+          <p>
+            Sou um solucionador de problemas entusiasmado, sempre em busca de novos desafios e
+            projetos inovadores. Estou pronto para contribuir com minha experiência e paixão para o
+            campo em constante evolução do desenvolvimento Front-End.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="src/img/foto_about.jpg" alt="Leonardo Gama" />
+        </div>
+      </div>
     </div>
-
-    <div class="text">
-      <p>
-        I'm Leonardo Gama, a dedicated Front-End developer skilled in Vue.js. My journey in
-        technology is driven by determination, unwavering focus, and a knack for effective teamwork.
-        With experience honed during almost three years in the United States, I've attained an
-        advanced level of English proficiency. I excel in crafting impactful digital experiences
-        that leave a lasting mark. Beyond coding, my commitment to collaboration and my global
-        perspective enable me to engage with diverse stakeholders effectively. I'm an enthusiastic
-        problem solver always seeking fresh challenges and innovative projects. I'm ready to
-        contribute my expertise and passion to the ever-evolving field of Front-End development.
-      </p>
-      <img src="src/img/foto_about.jpg" alt="" />
-    </div>
-  </div>
+  </section>
 </template>
 
 <script setup></script>
 
 <style scoped>
-.wrap {
-  position: relative;
-  display: block;
-  background: #ffffff;
-}
-/* 
-.title {
+.about-section {
+  background-color: #3b1cb7;
+  padding: 80px 0;
   text-align: center;
-} */
-
-.text {
-  display: flex;
-  text-align: start;
-  letter-spacing: 2.5px;
-  padding: 10px;
-  margin-right: 50px;
 }
 
-.text img {
-  width: 40%;
-  margin-left: 30px;
-  border-radius: 20% 0 20% 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+
+.about-text {
+  text-align: left;
+  max-width: 500px;
+  margin-right: 30px;
+}
+
+.about-text h2 {
+  font-size: xx-large;
+}
+.about-text p {
+  font-size: large;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10rem;
 }
 </style>

@@ -3,38 +3,58 @@
     <div class="entire-content">
       <div class="content-carrousel">
         <figure class="shadow">
-          <img src="src/icons/icons8-javascript-240.png" alt="Alan Walker - The Spectre" />
+          <a target="_blank" href="">
+            <img src="src/icons/icons8-javascript-240.png" alt="Alan Walker - The Spectre" />
+          </a>
         </figure>
         <figure class="shadow">
-          <img src="src/icons/icons8-html-5-240.svg" alt="Alan Walker - Alone" />
+          <a target="_blank" href="">
+            <img src="src/icons/icons8-html-5-240.svg" alt="Alan Walker - Alone" />
+          </a>
         </figure>
         <figure class="shadow">
-          <img src="src/icons/icons8-bootstrap.svg" alt="OM TELOLET OM - ALAN WALKER" />
-        </figure>
-
-        <figure class="shadow">
-          <img src="src/icons/icons8-vue-js.svg" alt="Alan Walker - The Spectre" />
+          <a target="_blank" href="https://getbootstrap.com/">
+            <img src="src/icons/icons8-bootstrap.svg" alt="OM TELOLET OM - ALAN WALKER" />
+          </a>
         </figure>
         <figure class="shadow">
-          <img
-            src="src/icons/icons8-mysql-logo.svg"
-            alt="Alan Walker has partnered with Battlefield to showcase his new track Alone"
-          />
+          <a target="_blank" href="https://vuejs.org/">
+            <img src="src/icons/icons8-vue-js.svg" alt="Alan Walker - The Spectre" />
+          </a>
         </figure>
         <figure class="shadow">
-          <img
-            src="src/icons/tailwindcss-icon.svg"
-            alt="The Drop Dancing GIF by Alan Walker Official"
-          />
+          <a target="_blank" href="https://www.mysql.com/">
+            <img
+              src="src/icons/icons8-mysql-logo.svg"
+              alt="Alan Walker has partnered with Battlefield to showcase his new track Alone"
+            />
+          </a>
         </figure>
         <figure class="shadow">
-          <img src="src/icons/w3_css-icon.svg" alt="alone GIF by Alan Walker Official" />
+          <a target="_blank" href="https://tailwindcss.com/">
+            <img
+              src="src/icons/tailwindcss-icon.svg"
+              alt="The Drop Dancing GIF by Alan Walker Official"
+            />
+          </a>
         </figure>
         <figure class="shadow">
-          <img src="src/icons/icons8-git.svg" alt="alone GIF by Alan Walker Official" />
+          <a target="_blank" href="">
+            <img src="src/icons/w3_css-icon.svg" alt="alone GIF by Alan Walker Official" />
+          </a>
         </figure>
         <figure class="shadow">
-          <img src="src/icons/python-icon.svg" alt="sing me to sleep GIF by Alan Walker Official" />
+          <a target="_blank" href="https://git-scm.com/">
+            <img src="src/icons/icons8-git.svg" alt="alone GIF by Alan Walker Official" />
+          </a>
+        </figure>
+        <figure class="shadow">
+          <a target="_blank" href="https://www.python.org/">
+            <img
+              src="src/icons/python-icon.svg"
+              alt="sing me to sleep GIF by Alan Walker Official"
+            />
+          </a>
         </figure>
       </div>
     </div>
