@@ -9,27 +9,21 @@
       <h3 class="project-title">{{ title }}</h3>
       <p class="project-description">{{ description }}</p>
       <div class="project-languages">
-        <div class="language">
-          <img v-if="html" src="@/assets/img/html.svg" alt="HTML" />
-        </div>
-        <div class="language">
-          <img v-if="vue" src="src/icons/icons8-vue-js.svg" alt="Vue.js" />
-        </div>
-        <div class="language">
-          <img v-if="css" src="@/assets/img/css-3-svgrepo-com.svg" alt="CSS" />
-        </div>
-        <div class="language">
-          <img v-if="javascript" src="src/icons/icons8-javascript-240.png" alt="JavaScript" />
-        </div>
+        <LanguageIcon v-if="vue" icon="src/icons/icons8-vue-js.svg" alt="Vue Logo" />
+        <LanguageIcon v-if="javascript" icon="src/icons/icons8-javascript-240.png" alt="Vue Logo" />
+        <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="Vue Logo" />
+        <LanguageIcon v-if="css" icon="src/icons/w3_css-icon.svg" alt="Vue Logo" />
+        <a :href="github" class="github-link language">
+          <LanguageIcon icon="src/icons/icons8-github.svg" alt="Github icon" />
+        </a>
       </div>
     </div>
-    <!-- <a :href="github" class="github-link">
-      <img src="src/icons/icons8-github.svg" alt="GitHub" />
-    </a> -->
   </div>
 </template>
 
 <script setup>
+import LanguageIcon from './LanguageIcon.vue'
+
 defineProps({
   title: String,
   description: String,
@@ -52,35 +46,26 @@ defineProps({
   display: flex;
   flex-direction: column;
   width: calc(33% - 30px);
-  height: 100%;
-}
-
-.project-image {
-  overflow: hidden;
+  height: auto;
 }
 
 .project-img {
   width: 100%;
   height: 100%;
-  /* border-radius: 10px; */
   cursor: pointer;
 }
 
 .project-details {
-  padding: 10px;
+  padding-left: 10px;
   background-color: rgba(241, 241, 241, 0.541);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* text-align: center; */
   color: #000;
-  text-decoration: none;
 }
 
 .project-title {
   font-size: 1.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .project-description {
@@ -89,24 +74,10 @@ defineProps({
 
 .project-languages {
   display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  margin-top: 10px;
-}
-
-.language {
-  width: 30px;
-  height: 100%;
-}
-
-.language img {
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
 }
 
 .github-link {
-  margin-top: auto;
-  text-align: right;
-  padding: 10px;
+  margin-left: 14rem;
 }
 </style>

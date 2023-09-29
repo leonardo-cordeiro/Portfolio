@@ -31,14 +31,6 @@
           vue="true"
           javascript="true"
         />
-        <!-- <BaseCard
-          link="https://brasileiro.ninja/"
-          img="src/img/brasileiroNinja.png"
-          title="Brasileiro Ninja"
-          description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
-          vue="true"
-          javascript="true"
-        />
         <BaseCard
           link="https://brasileiro.ninja/"
           img="src/img/brasileiroNinja.png"
@@ -54,38 +46,16 @@
           description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
           vue="true"
           javascript="true"
-        /> -->
+        />
+        <BaseCard
+          link="https://brasileiro.ninja/"
+          img="src/img/brasileiroNinja.png"
+          title="Brasileiro Ninja"
+          description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
+          vue="true"
+          javascript="true"
+        />
         <!-- Repita para cada BaseCard -->
-      </div>
-    </div>
-
-    <div class="base-cards-carousel">
-      <div class="base-cards-container">
-        <!-- Repita para cada BaseCard -->
-        <BaseCard
-          link="https://brasileiro.ninja/"
-          img="src/img/brasileiroNinja.png"
-          title="Brasileiro Ninja"
-          description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
-          vue="true"
-          javascript="true"
-        />
-        <BaseCard
-          link="https://brasileiro.ninja/"
-          img="src/img/brasileiroNinja.png"
-          title="Brasileiro Ninja"
-          description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
-          vue="true"
-          javascript="true"
-        />
-        <BaseCard
-          link="https://brasileiro.ninja/"
-          img="src/img/brasileiroNinja.png"
-          title="Brasileiro Ninja"
-          description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
-          vue="true"
-          javascript="true"
-        />
       </div>
     </div>
   </div>
@@ -102,7 +72,7 @@ import BaseCard from './BaseCard.vue'
   flex-direction: column;
   align-items: center;
   background-color: #386fded0;
-  height: 100vh;
+  height: 100%;
 }
 
 .buttons {
@@ -139,18 +109,22 @@ button:hover {
 .base-cards-carousel {
   overflow: hidden;
   width: 100%; /* Largura do Carrossel */
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .base-cards-container {
   display: flex;
-  transition: transform 0.3s ease; /* Adiciona uma transição suave de deslizamento */
+  flex-wrap: wrap; /* Permite que as BaseCards quebrem para a próxima linha */
+  justify-content: space-between; /* Espaçamento igual entre as BaseCards */
+}
+.base-cards-container .base-card {
+  flex: 0 0 calc(20% - 20px); /* Largura de cada BaseCard (altere o valor 20% para ajustar o tamanho) */
+  margin-right: 20px; /* Espaçamento entre os BaseCards */
+  margin-bottom: 20px; /* Espaçamento abaixo das linhas de BaseCards */
 }
 
-/* Estilo para os BaseCards */
-.base-cards-container .base-card {
-  flex: 0 0 calc(33.33% - 20px); /* Largura de cada BaseCard */
-  margin-right: 20px; /* Espaçamento entre os BaseCards */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave de deslizamento */
+/* Ajuste a altura dos BaseCards conforme necessário */
+.base-cards-container .base-card img {
+  height: 100px; /* Altura dos BaseCards */
 }
 </style>
