@@ -12,13 +12,14 @@
 <script setup>
 import { ref } from 'vue'
 
-const menuItems = ref(['Home', 'About', 'Portfolio', 'Contact'])
+const menuItems = ref(['Home', 'About', 'Portfolio'])
 </script>
 
 <style scoped>
 header {
   padding: 10px 20px;
-  color: #0084a8;
+  /* color: #0084a8; */
+  color: #fff;
   font-family: 'Poppins', 'sans-serif';
 }
 
@@ -28,8 +29,7 @@ nav {
   justify-content: space-around;
   width: 100%;
   padding: 25px 40px 25px 50px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  background: linear-gradient(135deg, #3403b7 31%, #07034d 80%);
   position: fixed;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ ul.socialMedia li {
 }
 
 ul.socialMedia li:hover {
-  background-color: #eeeeee;
+  color: #c0c0c0;
   /* padding: 0.5rem; */
   border-radius: 10%;
 }

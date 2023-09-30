@@ -13,8 +13,12 @@
         <LanguageIcon v-if="javascript" icon="src/icons/icons8-javascript-240.png" alt="Vue Logo" />
         <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="Vue Logo" />
         <LanguageIcon v-if="css" icon="src/icons/w3_css-icon.svg" alt="Vue Logo" />
-        <a :href="github" class="github-link language">
+        <a v-if="github" :href="github_link" class="github-link language" target="_blank">
           <LanguageIcon icon="src/icons/icons8-github.svg" alt="Github icon" />
+        </a>
+
+        <a v-if="web" :href="web_link" class="github-link language" target="_bank">
+          <LanguageIcon icon="src/icons/icons8-website-50.png" alt="Web Icon" />
         </a>
       </div>
     </div>
@@ -22,7 +26,7 @@
 </template>
 
 <script setup>
-import LanguageIcon from './LanguageIcon.vue'
+import LanguageIcon from '@/components/LanguageIcon.vue'
 
 defineProps({
   title: String,
@@ -33,7 +37,10 @@ defineProps({
   javascript: Boolean,
   vue: Boolean,
   link: String,
-  github: String
+  github: Boolean,
+  github_link: String,
+  web: Boolean,
+  web_link: String
 })
 </script>
 
@@ -45,19 +52,21 @@ defineProps({
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: calc(33% - 30px);
-  height: auto;
+  max-height: 400px;
+  width: 30%;
+  height: 100%;
+  background-color: #f2f2f2;
 }
 
 .project-img {
+  max-height: 200px;
   width: 100%;
-  height: 100%;
   cursor: pointer;
 }
 
 .project-details {
   padding-left: 10px;
-  background-color: rgba(241, 241, 241, 0.541);
+  padding-right: 5px;
   display: flex;
   flex-direction: column;
   color: #000;
@@ -78,6 +87,6 @@ defineProps({
 }
 
 .github-link {
-  margin-left: 14rem;
+  margin-left: 15rem;
 }
 </style>
