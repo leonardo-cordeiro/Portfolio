@@ -1,11 +1,15 @@
 <template>
-  <div class="wrap">
+  <div class="wrap" id="portfolio">
     <div class="buttons">
-      <button @click="onClickShowPortfolio" class="portfolio-button">Portfolio</button>
-      <button @click="onClickShowFreelancer" class="freelancer-button">Freelancer</button>
+      <button @click="toggleSection('portfolio')" :class="{ active: isActive('portfolio') }">
+        Portfolio
+      </button>
+      <button @click="toggleSection('freelancer')" :class="{ active: isActive('freelancer') }">
+        Freelancer
+      </button>
     </div>
 
-    <div v-if="showPortfolio" class="base-cards-container">
+    <div v-if="isActive('portfolio')" class="base-cards-container">
       <BaseCard
         link="https://brasileiro.ninja/"
         img="src/img/brasileiroNinja.png"
@@ -13,8 +17,9 @@
         description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
         vue="true"
         javascript="true"
+        chartjs="true"
         github="true"
-        github_link="https://github.com/leonardo-cordeiro"
+        github_link="https://github.com/arnonrdp/Brasileiro-Ninja"
       />
       <BaseCard
         link="https://brasileiro.ninja/"
@@ -34,7 +39,8 @@
         vue="true"
         javascript="true"
         github="true"
-        github_link="https://github.com/leonardo-cordeiro"
+        firebase="true"
+        github_link="https://github.com/leonardo-cordeiro/CryptoTracker"
       />
       <BaseCard
         link=""
@@ -44,7 +50,8 @@
         vue="true"
         javascript="true"
         github="true"
-        github_link="https://github.com/leonardo-cordeiro"
+        chartjs="true"
+        github_link="https://github.com/leonardo-cordeiro/finance-app-vue"
       />
       <BaseCard
         link="https://weather-app-7tx.pages.dev/"
@@ -53,8 +60,9 @@
         description="Weather forecast website for any city in the world"
         javascript="true"
         html="true"
+        css="true"
         github="true"
-        github_link="https://github.com/leonardo-cordeiro"
+        github_link="https://github.com/leonardo-cordeiro/projeto-weather"
       />
       <BaseCard
         link="https://b62d5232.calculadora-de-juros-compostos.pages.dev/"
@@ -63,12 +71,13 @@
         description="Calculates compound interest according to the amount and time entered"
         javascript="true"
         html="true"
+        css="true"
         github="true"
-        github_link="https://github.com/leonardo-cordeiro"
+        github_link="https://github.com/leonardo-cordeiro/calculadora-de-juros-compostos"
       />
     </div>
 
-    <div v-if="showFreelancer" class="base-cards-container">
+    <div v-if="isActive('freelancer')" class="base-cards-container">
       <BaseCard
         link="https://patronotransportes.com/"
         img="src/img/patrono_freelancer.png"
@@ -94,21 +103,14 @@
 </template>
 
 <script setup>
-import BaseCard from './BaseCard.vue'
+import BaseCard from '@/components/BaseCard.vue'
 import { ref } from 'vue'
 
-const showPortfolio = ref(true)
-const showFreelancer = ref(false)
+const activeSection = ref('portfolio')
 
-function onClickShowPortfolio() {
-  showPortfolio.value = true
-  showFreelancer.value = false
-}
+const toggleSection = (section) => (activeSection.value = section)
 
-function onClickShowFreelancer() {
-  showPortfolio.value = false
-  showFreelancer.value = true
-}
+const isActive = (section) => activeSection.value === section
 </script>
 
 <style scoped>
@@ -142,16 +144,12 @@ button:hover {
   background-color: #0056b3;
 }
 
-.portfolio-button {
-  background-color: #007bff;
-}
-
-.freelancer-button {
-  background-color: #6c757d;
-}
-
 .base-cards-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.active {
+  background-color: #ccc; /* Adicione a classe 'active' para destacar o botão ativo */
 }
 </style>

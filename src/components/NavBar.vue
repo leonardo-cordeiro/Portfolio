@@ -3,22 +3,26 @@
     <nav>
       <h3>Leonardo.dev</h3>
       <ul class="socialMedia">
-        <li v-for="item in menuItems" :key="item">{{ item }}</li>
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#about">
+          <li>About</li>
+        </a>
+
+        <a href="#portfolio">
+          <li>Portfolio</li>
+        </a>
       </ul>
     </nav>
   </header>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const menuItems = ref(['Home', 'About', 'Portfolio'])
-</script>
+<script setup></script>
 
 <style scoped>
 header {
   padding: 10px 20px;
-  /* color: #0084a8; */
   color: #fff;
   font-family: 'Poppins', 'sans-serif';
 }
@@ -60,6 +64,11 @@ ul.socialMedia li {
   font-weight: 600;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+ul.socialMedia a {
+  text-decoration: none;
+  color: #fff;
 }
 
 ul.socialMedia li:hover {

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="home">
     <div class="intro">
       <div class="wrap">
         <img src="src/img/fotoAvatar.png" alt="foto perfil" class="fotoPerfil" />
@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-import CarrouselSection from './CarrouselSection.vue'
+import CarrouselSection from '@/components/CarrouselSection.vue'
 </script>
 
 <style scoped>

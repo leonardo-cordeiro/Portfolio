@@ -9,12 +9,18 @@
       <h3 class="project-title">{{ title }}</h3>
       <p class="project-description">{{ description }}</p>
       <div class="project-languages">
-        <LanguageIcon v-if="vue" icon="src/icons/icons8-vue-js.svg" alt="Vue Logo" />
-        <LanguageIcon v-if="javascript" icon="src/icons/icons8-javascript-240.png" alt="Vue Logo" />
-        <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="Vue Logo" />
-        <LanguageIcon v-if="css" icon="src/icons/w3_css-icon.svg" alt="Vue Logo" />
+        <LanguageIcon v-if="vue" icon="src/icons/icons8-vue-js.svg" alt="Vue" />
+        <LanguageIcon
+          v-if="javascript"
+          icon="src/icons/icons8-javascript-240.png"
+          alt="JavaScript"
+        />
+        <LanguageIcon v-if="css" icon="src/icons/css-3.svg" alt="CSS" />
+        <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="HTML" />
+        <LanguageIcon v-if="chartjs" icon="src/icons/chart-js-seeklogo.com.svg" alt="Chart.js" />
+        <LanguageIcon v-if="firebase" icon="src/icons/icons8-firebase.svg" alt="Firebase" />
         <a v-if="github" :href="github_link" class="github-link language" target="_blank">
-          <LanguageIcon icon="src/icons/icons8-github.svg" alt="Github icon" />
+          <LanguageIcon icon="src/icons/icons8-github.svg" alt="Github" />
         </a>
 
         <a v-if="web" :href="web_link" class="github-link language" target="_bank">
@@ -33,9 +39,11 @@ defineProps({
   description: String,
   img: String,
   html: Boolean,
+  chartjs: Boolean,
   css: Boolean,
   javascript: Boolean,
   vue: Boolean,
+  firebase: Boolean,
   link: String,
   github: Boolean,
   github_link: String,
@@ -48,8 +56,8 @@ defineProps({
 .project-card {
   margin: 15px;
   border: 2px solid #fff;
-  border-radius: 5%;
-  overflow: hidden;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   max-height: 400px;
@@ -58,10 +66,16 @@ defineProps({
   background-color: #f2f2f2;
 }
 
+.project-card:hover {
+  scale: 1.02;
+  box-shadow: 10px 10px #00000057;
+}
+
 .project-img {
   max-height: 200px;
   width: 100%;
   cursor: pointer;
+  border-radius: 12px 12px 0 0;
 }
 
 .project-details {
@@ -88,5 +102,10 @@ defineProps({
 
 .github-link {
   margin-left: 15rem;
+}
+
+.css {
+  width: 30px;
+  height: 30px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="container">
       <div class="about-content">
         <div class="about-text">
@@ -20,6 +20,12 @@
             projetos inovadores. Estou pronto para contribuir com minha experiência e paixão para o
             campo em constante evolução do desenvolvimento Front-End.
           </p>
+          <button class="resume">
+            <a href="src/pdf/ProfileEnglish.pdf" download> Dowload Resume</a>
+            <div>
+              <img class="resume_img" src="src/icons/resume (1).png" alt="resume icon" />
+            </div>
+          </button>
         </div>
         <div class="about-image">
           <img src="src/img/foto_about.jpg" alt="Leonardo Gama" />
@@ -73,5 +79,32 @@
   border-radius: 10px;
   margin-top: 20px;
   margin-left: 10rem;
+}
+
+.resume {
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #007bff40;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 25px;
+  display: flex;
+}
+
+.resume:hover {
+  background-color: #0056b3;
+}
+
+.resume a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.resume_img {
+  margin-left: 8px;
+  width: 25px;
 }
 </style>

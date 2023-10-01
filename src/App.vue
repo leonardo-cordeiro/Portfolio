@@ -18,7 +18,7 @@
 import AboutSectionVue from '@/components/AboutSection.vue'
 import HomeSection from '@/components/HomeSection.vue'
 import NavBar from '@/components/NavBar.vue'
-import PortfolioSectionVue from './components/PortfolioSection.vue'
+import PortfolioSectionVue from '@/components/PortfolioSection.vue'
 </script>
 
 <style>
@@ -29,6 +29,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Estilos globais */
