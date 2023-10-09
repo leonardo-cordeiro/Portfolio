@@ -150,6 +150,13 @@ button:hover {
 }
 
 .active {
-  background-color: #ccc; /* Adicione a classe 'active' para destacar o botão ativo */
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 498px) {
+  .wrap {
+    width: 100%;
+    /* max-width: 1000px; */
+  }
 }
 </style>

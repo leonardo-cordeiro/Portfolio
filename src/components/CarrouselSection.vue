@@ -65,16 +65,16 @@
 
 <style scoped>
 #slideshow {
-  width: 100%;
+  width: 130%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .entire-content {
   margin-top: 50px;
-  margin-left: 932px;
+  margin-left: 1120px;
   width: 50px;
   perspective: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .content-carrousel {
@@ -94,7 +94,7 @@
   width: 100%;
   height: 50px;
   overflow: hidden;
-  /* position: absolute; */
+  position: absolute;
 }
 
 .content-carrousel figure:nth-child(1) {
@@ -153,6 +153,21 @@
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@media screen and (max-width: 498px) {
+  #slideshow {
+    display: none;
+  }
+  .entire-content {
+    margin-left: 100px;
+    width: 30px;
+    margin-top: 100px;
+  }
+
+  #slideshow {
+    width: 130%;
   }
 }
 </style>

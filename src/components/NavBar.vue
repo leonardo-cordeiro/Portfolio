@@ -1,79 +1,160 @@
 <template>
-  <header>
-    <nav>
-      <h3>Leonardo.dev</h3>
-      <ul class="socialMedia">
-        <a href="#home">
-          <li>Home</li>
-        </a>
-        <a href="#about">
-          <li>About</li>
-        </a>
-
-        <a href="#portfolio">
-          <li>Portfolio</li>
-        </a>
-      </ul>
-    </nav>
+  <header class="header-area">
+    <div class="navbar-area">
+      <div class="container">
+        <nav class="site-navbar">
+          <a href="#home" class="site-logo">Leonardo.dev</a>
+          <ul :class="{ open: isNavOpen }">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+          </ul>
+          <button class="nav-toggler" @click="toggleNav">
+            <span :class="{ 'toggler-open': isNavOpen }"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const isNavOpen = ref(false)
+
+function toggleNav() {
+  isNavOpen.value = !isNavOpen.value
+}
+</script>
 
 <style scoped>
-header {
-  padding: 10px 20px;
-  color: #fff;
-  font-family: 'Poppins', 'sans-serif';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.container {
   width: 100%;
-  padding: 25px 40px 25px 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar-area {
   background: linear-gradient(135deg, #3403b7 31%, #07034d 80%);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 200;
 }
-
-nav h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 900;
-  margin-right: 30rem;
-  order: 1;
-}
-
-ul.socialMedia {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.site-navbar {
   display: flex;
-  order: 2;
+  justify-content: space-between;
+  align-items: center;
 }
-
-ul.socialMedia li {
-  margin-left: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-ul.socialMedia a {
-  text-decoration: none;
+a.site-logo {
+  font-size: 30px;
+  font-weight: 800;
   color: #fff;
+  text-decoration: none;
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-navbar ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.site-navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-ul.socialMedia li:hover {
-  color: #c0c0c0;
-  /* padding: 0.5rem; */
-  border-radius: 10%;
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .nav-toggler {
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #444;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+  .intro-area h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
 }
 </style>

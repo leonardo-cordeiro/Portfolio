@@ -74,10 +74,11 @@ import CarrouselSection from '@/components/CarrouselSection.vue'
 }
 
 .fotoPerfil {
-  width: 320px;
+  width: 280px;
   margin-top: 3rem;
-  background-color: #fff;
-  border: 1.5px solid #b9b9b9;
+  /* background-color: #fff; */
+  background: transparent;
+  /* border: 1.5px solid #b9b9b9; */
   border-radius: 30%;
 }
 
@@ -89,5 +90,35 @@ button {
   background: transparent;
   border: none;
   margin: 5px;
+}
+
+@media screen and (max-width: 498px) {
+  .intro {
+    /* padding: 5rem 2rem; */
+    text-align: center;
+  }
+
+  .wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .fotoPerfil {
+    width: 200px;
+    margin-top: 2rem;
+  }
+  .icons {
+    margin-top: 2rem;
+    justify-content: center;
+  }
 }
 </style>

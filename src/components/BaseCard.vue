@@ -9,23 +9,27 @@
       <h3 class="project-title">{{ title }}</h3>
       <p class="project-description">{{ description }}</p>
       <div class="project-languages">
-        <LanguageIcon v-if="vue" icon="src/icons/icons8-vue-js.svg" alt="Vue" />
-        <LanguageIcon
-          v-if="javascript"
-          icon="src/icons/icons8-javascript-240.png"
-          alt="JavaScript"
-        />
-        <LanguageIcon v-if="css" icon="src/icons/css-3.svg" alt="CSS" />
-        <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="HTML" />
-        <LanguageIcon v-if="chartjs" icon="src/icons/chart-js-seeklogo.com.svg" alt="Chart.js" />
-        <LanguageIcon v-if="firebase" icon="src/icons/icons8-firebase.svg" alt="Firebase" />
-        <a v-if="github" :href="github_link" class="github-link language" target="_blank">
-          <LanguageIcon icon="src/icons/icons8-github.svg" alt="Github" />
-        </a>
+        <div style="display: flex">
+          <LanguageIcon v-if="vue" icon="src/icons/icons8-vue-js.svg" alt="Vue" />
+          <LanguageIcon
+            v-if="javascript"
+            icon="src/icons/icons8-javascript-240.png"
+            alt="JavaScript"
+          />
+          <LanguageIcon v-if="css" icon="src/icons/css-3.svg" alt="CSS" />
+          <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="HTML" />
+          <LanguageIcon v-if="chartjs" icon="src/icons/chart-js-seeklogo.com.svg" alt="Chart.js" />
+          <LanguageIcon v-if="firebase" icon="src/icons/icons8-firebase.svg" alt="Firebase" />
+        </div>
+        <div>
+          <a v-if="github" :href="github_link" class="github-link language" target="_blank">
+            <LanguageIcon icon="src/icons/icons8-github.svg" alt="Github" />
+          </a>
 
-        <a v-if="web" :href="web_link" class="github-link language" target="_bank">
-          <LanguageIcon icon="src/icons/icons8-website-50.png" alt="Web Icon" />
-        </a>
+          <a v-if="web" :href="web_link" class="github-link language" target="_bank">
+            <LanguageIcon icon="src/icons/icons8-website-50.png" alt="Web Icon" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -98,14 +102,22 @@ defineProps({
 .project-languages {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.github-link {
+/* .github-link {
   margin-left: 15rem;
-}
+} */
 
 .css {
   width: 30px;
   height: 30px;
+}
+
+@media screen and (max-width: 498px) {
+  .project-card {
+    width: 400px;
+    max-width: 90vw;
+  }
 }
 </style>

@@ -107,4 +107,21 @@
   margin-left: 8px;
   width: 25px;
 }
+
+@media screen and (max-width: 498px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-image img {
+    display: none;
+  }
+
+  .about-text {
+    margin: 10px;
+  }
+}
 </style>
