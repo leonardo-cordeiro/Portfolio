@@ -152,11 +152,4 @@ button:hover {
 .active {
   background-color: #ccc;
 }
-
-@media screen and (max-width: 498px) {
-  .wrap {
-    width: 100%;
-    /* max-width: 1000px; */
-  }
-}
 </style>

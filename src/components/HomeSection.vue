@@ -4,9 +4,9 @@
       <div class="wrap">
         <img src="src/img/fotoAvatar.png" alt="foto perfil" class="fotoPerfil" />
         <div class="text">
-          <h1>Front-End Vue.js Developer 👾</h1>
+          <h1>Front-End Developer 👨🏻‍💻</h1>
           <p>
-            👋🏻 Hello World, I'm Leonardo Cordeiro. A passionate Front-End Vue.js Developer <br />
+            👋🏻 Hello World, I'm Leonardo Cordeiro. A passionate Front-End Developer <br />
             based in Rio de Janeiro, Brazil. 🇧🇷
           </p>
           <div class="icons">
@@ -57,6 +57,7 @@ import CarrouselSection from '@/components/CarrouselSection.vue'
   display: flex;
   align-items: center;
   gap: 10rem;
+  margin-top: 2.5rem;
 }
 
 .text p {

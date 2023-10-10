@@ -5,9 +5,9 @@
         <nav class="site-navbar">
           <a href="#home" class="site-logo">Leonardo.dev</a>
           <ul :class="{ open: isNavOpen }">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
+            <li @click="closeToggle"><a href="#home">home</a></li>
+            <li @click="closeToggle"><a href="#about">about</a></li>
+            <li @click="closeToggle"><a href="#portfolio">portfolio</a></li>
           </ul>
           <button class="nav-toggler" @click="toggleNav">
             <span :class="{ 'toggler-open': isNavOpen }"></span>
@@ -26,25 +26,20 @@ const isNavOpen = ref(false)
 function toggleNav() {
   isNavOpen.value = !isNavOpen.value
 }
+
+function closeToggle() {
+  isNavOpen.value = false
+}
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
 .container {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
+  position: fixed;
+  background: linear-gradient(135deg, #3403b7 31%, #07034d 80%);
+  z-index: 9999;
 }
 
 .navbar-area {
@@ -60,9 +55,10 @@ a.site-logo {
   font-weight: 800;
   color: #fff;
   text-decoration: none;
+  margin-left: 2rem;
 }
 .site-navbar ul {
-  margin: 0;
+  margin: 0 2rem;
   padding: 0;
   list-style: none;
   display: flex;
@@ -73,6 +69,7 @@ a.site-logo {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  margin-left: 1rem;
 }
 .site-navbar ul li a:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -155,6 +152,9 @@ a.site-logo {
   .intro-area h2 {
     font-size: 36px;
     margin-bottom: 15px;
+  }
+  a.site-logo {
+    margin: 0;
   }
 }
 </style>

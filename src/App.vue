@@ -37,5 +37,6 @@ body {
   background: white;
   font-family: 'Poppins', sans-serif;
   color: #4d4d4d;
+  line-height: 1.5;
 }
 </style>
