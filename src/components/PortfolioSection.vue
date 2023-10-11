@@ -22,17 +22,6 @@
         github_link="https://github.com/arnonrdp/Brasileiro-Ninja"
       />
       <BaseCard
-        link="/"
-        img="src/img/portfolio.png"
-        title="Personal Portfolio"
-        description="This is my portfolio page to present my professional and personal projects"
-        vue="true"
-        javascript="true"
-        css="true"
-        github="true"
-        github_link="https://github.com/leonardo-cordeiro"
-      />
-      <BaseCard
         link="https://brasileiro.ninja/"
         img="src/img/crypto_Tracker.png"
         title="Crypto Tracker"
@@ -54,6 +43,17 @@
         github="true"
         chartjs="true"
         github_link="https://github.com/leonardo-cordeiro/finance-app-vue"
+      />
+      <BaseCard
+        link="/"
+        img="src/img/portfolio.png"
+        title="Personal Portfolio"
+        description="This is my portfolio page to present my professional and personal projects"
+        vue="true"
+        javascript="true"
+        css="true"
+        github="true"
+        github_link="https://github.com/leonardo-cordeiro"
       />
       <BaseCard
         link="https://weather-app-7tx.pages.dev/"
