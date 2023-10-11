@@ -22,12 +22,13 @@
         github_link="https://github.com/arnonrdp/Brasileiro-Ninja"
       />
       <BaseCard
-        link="https://brasileiro.ninja/"
-        img="src/img/brasileiroNinja.png"
-        title="Brasileiro Ninja"
-        description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
+        link="/"
+        img="src/img/portfolio.png"
+        title="Personal Portfolio"
+        description="This is my portfolio page to present my professional and personal projects"
         vue="true"
         javascript="true"
+        css="true"
         github="true"
         github_link="https://github.com/leonardo-cordeiro"
       />
@@ -40,6 +41,7 @@
         javascript="true"
         github="true"
         firebase="true"
+        tailwind="true"
         github_link="https://github.com/leonardo-cordeiro/CryptoTracker"
       />
       <BaseCard

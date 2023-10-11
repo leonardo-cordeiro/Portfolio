@@ -77,9 +77,8 @@ import CarrouselSection from '@/components/CarrouselSection.vue'
 .fotoPerfil {
   width: 280px;
   margin-top: 3rem;
-  /* background-color: #fff; */
-  background: transparent;
-  /* border: 1.5px solid #b9b9b9; */
+  background-color: #6d9cf3dc;
+  border: 1.5px solid #b9b9b950;
   border-radius: 30%;
 }
 

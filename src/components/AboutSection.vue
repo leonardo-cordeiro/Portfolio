@@ -3,22 +3,22 @@
     <div class="container">
       <div class="about-content">
         <div class="about-text">
-          <h2>Olá, sou Leonardo Gama</h2>
+          <h2>A Small Piece of My History...</h2>
           <p>
-            Sou um apaixonado por desenvolvimento Front-End, criando experiências digitais incríveis
-            com Vue.js.
+            I am Brazilian, and like many compatriots, I have that unwavering determination that
+            characterizes us. When I began my journey in programming, there were moments when I
+            thought about giving up, but as a good Brazilian, that simply isn't an option for me.
+            After a long period of study and dedication, I finally realized that I was making
+            significant progress in the world of programming and was truly getting the hang of it.
+            Today, my passion for programming is unwavering, and I don't go a day without immersing
+            myself in code
           </p>
           <p>
-            Minha jornada no mundo da tecnologia é impulsionada pela determinação, foco inabalável e
-            paixão por colaborar em equipe. Com experiência adquirida em quase três anos nos Estados
-            Unidos, alcancei um alto nível de proficiência em inglês. Além de codificar, minha
-            dedicação à colaboração e minha perspectiva global me permitem interagir eficazmente com
-            diversas partes interessadas.
-          </p>
-          <p>
-            Sou um solucionador de problemas entusiasmado, sempre em busca de novos desafios e
-            projetos inovadores. Estou pronto para contribuir com minha experiência e paixão para o
-            campo em constante evolução do desenvolvimento Front-End.
+            Beyond programming, I was a professional athlete in track and field, and I lived in the
+            United States for nearly three years, enriching my worldview. Traveling throughout
+            Brazil allowed me to get to know its diverse regions and incredible people. My journey
+            is a blend of determination, a passion for programming, and a constant desire to explore
+            new horizons.
           </p>
           <button class="resume">
             <a href="src/pdf/ProfileEnglish.pdf" download> Dowload Resume</a>

@@ -20,6 +20,7 @@
           <LanguageIcon v-if="html" icon="src/icons/icons8-html-5-240.svg" alt="HTML" />
           <LanguageIcon v-if="chartjs" icon="src/icons/chart-js-seeklogo.com.svg" alt="Chart.js" />
           <LanguageIcon v-if="firebase" icon="src/icons/icons8-firebase.svg" alt="Firebase" />
+          <LanguageIcon v-if="tailwind" icon="src/icons/tailwindcss-icon.svg" alt="Tailwind" />
         </div>
         <div>
           <a v-if="github" :href="github_link" class="github-link language" target="_blank">
@@ -52,7 +53,8 @@ defineProps({
   github: Boolean,
   github_link: String,
   web: Boolean,
-  web_link: String
+  web_link: String,
+  tailwind: Boolean
 })
 </script>
 
