@@ -1,13 +1,13 @@
 <template>
-  <Tooltip flow="down" :tooltip="alt">
+  <ToolTip flow="down" :tooltip="alt">
     <div class="language-icon">
       <img :src="icon" :alt="alt" />
     </div>
-  </Tooltip>
+  </ToolTip>
 </template>
 
 <script setup>
-import Tooltip from '@/components/Tooltip.vue'
+import ToolTip from '@/components/ToolTip.vue'
 defineProps({
   icon: String,
   alt: String

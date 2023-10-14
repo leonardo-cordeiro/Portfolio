@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "target": "ES2020"
+  },
+  "exclude": ["node_modules", "**/node_modules/*"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"]
+}
