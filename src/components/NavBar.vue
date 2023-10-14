@@ -69,10 +69,10 @@ a.site-logo {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  margin-left: 1rem;
 }
 .site-navbar ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
+  color: #f2f2f2e2;
 }
 
 .nav-toggler {
@@ -113,10 +113,12 @@ a.site-logo {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 720px;
+    padding: 0;
   }
 
   .nav-toggler {
     display: block;
+    margin-right: 1rem;
   }
   .site-navbar {
     min-height: 60px;
@@ -130,10 +132,11 @@ a.site-logo {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #444;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.83);
     max-height: 0;
     overflow: hidden;
     transition: 0.3s;
+    margin: 0;
   }
   .site-navbar ul li {
     width: 100%;
@@ -154,7 +157,7 @@ a.site-logo {
     margin-bottom: 15px;
   }
   a.site-logo {
-    margin: 0;
+    margin: 0 1rem;
   }
 }
 </style>

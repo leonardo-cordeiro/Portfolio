@@ -11,35 +11,35 @@
           </p>
           <div class="icons">
             <button>
-              <a href="" target="_blank">
+              <a href="mailto:gama05596@gmail.com" target="_blank">
                 <img src="src/icons/icons8-gmail-logo.svg" alt="" />
               </a>
             </button>
             <button>
-              <a href="" target="_blank">
+              <a href="https://wa.me/5521968437171" target="_blank">
                 <img src="src/icons/icons8-whatsapp.svg" alt="" />
               </a>
             </button>
             <button>
-              <a href="" target="_blank">
+              <a href="https://www.linkedin.com/in/leonardo-cordeiro28/" target="_blank">
                 <img src="src/icons/icons8-linkedin.svg" alt="" />
               </a>
             </button>
             <button>
-              <a href="" target="_blank">
+              <a href="https://github.com/leonardo-cordeiro" target="_blank">
                 <img src="src/icons/icons8-github.svg" alt="" />
               </a>
             </button>
           </div>
         </div>
       </div>
-      <CarrouselSection />
+      <!-- <CarrouselSection /> -->
     </div>
   </section>
 </template>
 
 <script setup>
-import CarrouselSection from '@/components/CarrouselSection.vue'
+// import CarrouselSection from '@/components/CarrouselSection.vue'
 </script>
 
 <style scoped>
@@ -54,10 +54,8 @@ import CarrouselSection from '@/components/CarrouselSection.vue'
 }
 
 .wrap {
-  display: flex;
-  align-items: center;
   gap: 10rem;
-  margin-top: 2.5rem;
+  margin: 2rem auto;
 }
 
 .text p {
@@ -92,7 +90,7 @@ button {
   margin: 5px;
 }
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 767px) {
   .intro {
     /* padding: 5rem 2rem; */
     text-align: center;

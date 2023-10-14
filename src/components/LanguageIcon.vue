@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import Tooltip from './Tooltip.vue'
+import Tooltip from '@/components/Tooltip.vue'
 defineProps({
   icon: String,
   alt: String

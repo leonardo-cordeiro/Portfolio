@@ -78,7 +78,7 @@
 }
 
 .content-carrousel {
-  width: 100%;
+  width: 90%;
   position: absolute;
   float: right;
   animation: rotar 15s infinite linear;
@@ -91,7 +91,7 @@
 }
 
 .content-carrousel figure {
-  width: 100%;
+  width: 90%;
   height: 50px;
   overflow: hidden;
   position: absolute;
@@ -131,14 +131,14 @@
 .shadow {
   position: absolute;
   box-shadow: 0px 0px 10px 0px #000;
-  border-radius: 5%;
+  border-radius: 30%;
   background-color: white;
 }
 
 .content-carrousel img {
   image-rendering: auto;
   transition: all 300ms;
-  width: 100%;
+  width: 98%;
   height: 100%;
 }
 
@@ -156,7 +156,7 @@
   }
 }
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 767px) {
   #slideshow {
     display: none;
   }
@@ -168,6 +168,12 @@
 
   #slideshow {
     width: 130%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #slideshow {
+    display: none;
   }
 }
 </style>

@@ -21,6 +21,8 @@
           <LanguageIcon v-if="chartjs" icon="src/icons/chart-js-seeklogo.com.svg" alt="Chart.js" />
           <LanguageIcon v-if="firebase" icon="src/icons/icons8-firebase.svg" alt="Firebase" />
           <LanguageIcon v-if="tailwind" icon="src/icons/tailwindcss-icon.svg" alt="Tailwind" />
+          <LanguageIcon v-if="python" icon="src/icons/python-icon.svg" alt="Python" />
+          <LanguageIcon v-if="mysql" icon="src/icons/icons8-mysql-logo.svg" alt="MySql" />
         </div>
         <div>
           <a v-if="github" :href="github_link" class="github-link language" target="_blank">
@@ -54,7 +56,9 @@ defineProps({
   github_link: String,
   web: Boolean,
   web_link: String,
-  tailwind: Boolean
+  tailwind: Boolean,
+  python: Boolean,
+  mysql: Boolean
 })
 </script>
 
@@ -107,18 +111,21 @@ defineProps({
   justify-content: space-between;
 }
 
-/* .github-link {
-  margin-left: 15rem;
-} */
-
 .css {
   width: 30px;
   height: 30px;
 }
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 767px) {
   .project-card {
     width: 400px;
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-card {
+    width: 325px;
     max-width: 90vw;
   }
 }

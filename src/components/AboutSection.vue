@@ -10,8 +10,8 @@
             thought about giving up, but as a good Brazilian, that simply isn't an option for me.
             After a long period of study and dedication, I finally realized that I was making
             significant progress in the world of programming and was truly getting the hang of it.
-            Today, my passion for programming is unwavering, and I don't go a day without immersing
-            myself in code
+            Today, my passion for programming only increases, and I don't go a day without immersing
+            myself in code.
           </p>
           <p>
             Beyond programming, I was a professional athlete in track and field, and I lived in the
@@ -108,7 +108,7 @@
   width: 25px;
 }
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 767px) {
   .about-content {
     display: flex;
     flex-direction: column;
@@ -122,6 +122,21 @@
 
   .about-text {
     margin: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(calc((100% - calc(((100vw / 1)))))));
+    grid-gap: var(--space);
+    justify-content: space-evenly;
+  }
+
+  .about-image img {
+    max-width: 70vw;
+    align-items: center;
+    margin-left: 0;
   }
 }
 </style>

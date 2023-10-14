@@ -6,11 +6,15 @@
     <!-- Introdução -->
     <HomeSection />
 
+    <TesteCarrousel />
     <!-- About  -->
     <AboutSectionVue />
 
     <!-- Portfolio -->
     <PortfolioSectionVue />
+
+    <!-- Footer -->
+    <FooterSection />
   </main>
 </template>
 
@@ -19,6 +23,8 @@ import AboutSectionVue from '@/components/AboutSection.vue'
 import HomeSection from '@/components/HomeSection.vue'
 import NavBar from '@/components/NavBar.vue'
 import PortfolioSectionVue from '@/components/PortfolioSection.vue'
+import FooterSection from './components/FooterSection.vue'
+import TesteCarrousel from './components/TesteCarrousel.vue'
 </script>
 
 <style>

@@ -22,7 +22,7 @@
         github_link="https://github.com/arnonrdp/Brasileiro-Ninja"
       />
       <BaseCard
-        link="https://brasileiro.ninja/"
+        link=""
         img="src/img/crypto_Tracker.png"
         title="Crypto Tracker"
         description="Cryptocurrency website, with daily variation in coin prices and user authentication."
@@ -46,7 +46,7 @@
       />
       <BaseCard
         link="/"
-        img="src/img/portfolio.png"
+        img="src/img/Captura de Tela 2023-10-14 às 15.16.41.png"
         title="Personal Portfolio"
         description="This is my portfolio page to present my professional and personal projects"
         vue="true"
@@ -55,11 +55,22 @@
         github="true"
         github_link="https://github.com/leonardo-cordeiro"
       />
+
+      <BaseCard
+        img="src/img/Captura de Tela 2023-10-14 às 15.03.30.png"
+        title="Python Web Scraping"
+        description="Web Scraping using python connected with MySql"
+        python="true"
+        mysql="true"
+        github="true"
+        github_link="https://github.com/leonardo-cordeiro/Web-Scraping-python"
+      />
+
       <BaseCard
         link="https://weather-app-7tx.pages.dev/"
         img="src/img/weather_app.png"
         title="Weather App"
-        description="Weather forecast website for any city in the world"
+        description="Weather forecast website where you can check the temperature, humidity and wind speed."
         javascript="true"
         html="true"
         css="true"
