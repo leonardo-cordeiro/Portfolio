@@ -23,7 +23,7 @@
           <button class="resume">
             <a href="src/pdf/ProfileEnglish.pdf" download> Dowload Resume</a>
             <div>
-              <img class="resume_img" src="../assets/icons/resume (1).png" alt="resume icon" />
+              <img class="resume_img" src="../assets/icons/resume.png" alt="resume icon" />
             </div>
           </button>
         </div>
