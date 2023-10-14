@@ -33,14 +33,11 @@
           </div>
         </div>
       </div>
-      <!-- <CarrouselSection /> -->
     </div>
   </section>
 </template>
 
-<script setup>
-// import CarrouselSection from '@/components/CarrouselSection.vue'
-</script>
+<script setup></script>
 
 <style scoped>
 .intro {
