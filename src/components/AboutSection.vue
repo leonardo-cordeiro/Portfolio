@@ -23,12 +23,12 @@
           <button class="resume">
             <a href="src/pdf/ProfileEnglish.pdf" download> Dowload Resume</a>
             <div>
-              <img class="resume_img" src="/src/icons/resume (1).png" alt="resume icon" />
+              <img class="resume_img" src="../assets/icons/resume (1).png" alt="resume icon" />
             </div>
           </button>
         </div>
         <div class="about-image">
-          <img src="/src/img/foto_about.jpg" alt="Leonardo Gama" />
+          <img src="../assets/img/foto_about.jpg" alt="Leonardo Gama" />
         </div>
       </div>
     </div>

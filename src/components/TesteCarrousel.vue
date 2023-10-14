@@ -2,43 +2,43 @@
   <div class="slider">
     <div class="slide-track">
       <div class="slide">
-        <img src="/src/icons/icons8-html-5-240.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-html-5-240.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/css-3.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/css-3.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-javascript-240.png" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-javascript-240.png" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-vue-js.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-vue-js.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-bootstrap.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-bootstrap.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-firebase.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-firebase.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-git.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-git.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/tailwindcss-icon.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/tailwindcss-icon.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/python-icon.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/python-icon.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-mysql-logo.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-mysql-logo.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-firebase.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-firebase.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/icons8-git.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/icons8-git.svg" height="100" width="100" alt="" />
       </div>
       <div class="slide">
-        <img src="/src/icons/tailwindcss-icon.svg" height="100" width="100" alt="" />
+        <img src="../assets/icons/tailwindcss-icon.svg" height="100" width="100" alt="" />
       </div>
     </div>
   </div>
