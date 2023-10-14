@@ -2,7 +2,7 @@
   <section id="home">
     <div class="intro">
       <div class="wrap">
-        <img src="img/fotoAvatar.png" alt="foto perfil" class="fotoPerfil" />
+        <img src="/img/fotoAvatar.png" alt="foto perfil" class="fotoPerfil" />
         <div class="text">
           <h1>Front-End Developer 👨🏻‍💻</h1>
           <p>
@@ -12,22 +12,22 @@
           <div class="icons">
             <button>
               <a href="mailto:gama05596@gmail.com" target="_blank">
-                <img src="icons/icons8-gmail-logo.svg" alt="" />
+                <img src="/icons/icons8-gmail-logo.svg" alt="" />
               </a>
             </button>
             <button>
               <a href="https://wa.me/5521968437171" target="_blank">
-                <img src="icons/icons8-whatsapp.svg" alt="" />
+                <img src="/icons/icons8-whatsapp.svg" alt="" />
               </a>
             </button>
             <button>
               <a href="https://www.linkedin.com/in/leonardo-cordeiro28/" target="_blank">
-                <img src="icons/icons8-linkedin.svg" alt="" />
+                <img src="/icons/icons8-linkedin.svg" alt="" />
               </a>
             </button>
             <button>
               <a href="https://github.com/leonardo-cordeiro" target="_blank">
-                <img src="icons/icons8-github.svg" alt="" />
+                <img src="/icons/icons8-github.svg" alt="" />
               </a>
             </button>
           </div>

@@ -12,7 +12,7 @@
     <div v-if="isActive('portfolio')" class="base-cards-container">
       <BaseCard
         link="https://brasileiro.ninja/"
-        img="img/brasileiroNinja.png"
+        img="/img/brasileiroNinja.png"
         title="Brasileiro Ninja"
         description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
         vue="true"
@@ -23,7 +23,7 @@
       />
       <BaseCard
         link=""
-        img="img/crypto_Tracker.png"
+        img="/img/crypto_Tracker.png"
         title="Crypto Tracker"
         description="Cryptocurrency website, with daily variation in coin prices and user authentication."
         vue="true"
@@ -35,7 +35,7 @@
       />
       <BaseCard
         link=""
-        img="img/Finance_App.png"
+        img="/img/Finance_App.png"
         title="Finance App"
         description="Expense tracking website, which has a graph showing the balance and a transaction history"
         vue="true"
@@ -46,7 +46,7 @@
       />
       <BaseCard
         link="/"
-        img="img/Captura de Tela 2023-10-14 às 15.16.41.png"
+        img="/img/Captura de Tela 2023-10-14 às 15.16.41.png"
         title="Personal Portfolio"
         description="This is my portfolio page to present my professional and personal projects"
         vue="true"
@@ -57,7 +57,7 @@
       />
 
       <BaseCard
-        img="img/Captura de Tela 2023-10-14 às 15.03.30.png"
+        img="/img/Captura de Tela 2023-10-14 às 15.03.30.png"
         title="Python Web Scraping"
         description="Web Scraping using python connected with MySql"
         python="true"
@@ -68,7 +68,7 @@
 
       <BaseCard
         link="https://weather-app-7tx.pages.dev/"
-        img="img/weather_app.png"
+        img="/img/weather_app.png"
         title="Weather App"
         description="Weather forecast website where you can check the temperature, humidity and wind speed."
         javascript="true"
@@ -79,7 +79,7 @@
       />
       <BaseCard
         link="https://b62d5232.calculadora-de-juros-compostos.pages.dev/"
-        img="img/calculadora_juros_compostos.png"
+        img="/img/calculadora_juros_compostos.png"
         title="Compound interest calculator"
         description="Calculates compound interest according to the amount and time entered"
         javascript="true"
@@ -93,7 +93,7 @@
     <div v-if="isActive('freelancer')" class="base-cards-container">
       <BaseCard
         link="https://patronotransportes.com/"
-        img="img/patrono_freelancer.png"
+        img="/img/patrono_freelancer.png"
         title="Patrono Transportes"
         description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
         vue="true"
@@ -103,7 +103,7 @@
       />
       <BaseCard
         link="http://www.rendaz.com.br/wtorre/"
-        img="img/Captura de Tela 2023-09-29 às 18.09.33.png"
+        img="/img/Captura de Tela 2023-09-29 às 18.09.33.png"
         title="W-torre Engenharia"
         description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
         vue="true"
