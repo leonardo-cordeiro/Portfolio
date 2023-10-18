@@ -25,7 +25,7 @@
         link=""
         img="/img/crypto_Tracker.png"
         title="Crypto Tracker"
-        description="Cryptocurrency website, with daily variation in coin prices and user authentication."
+        description="Cryptocurrency website, with daily variation in coin prices."
         vue="true"
         javascript="true"
         github="true"
@@ -59,7 +59,7 @@
       <BaseCard
         img="/img/Captura de Tela 2023-10-14 às 15.03.30.png"
         title="Python Web Scraping"
-        description="Web Scraping using python connected with MySql"
+        description="Web Scraping using python integrated with MySql data base"
         python="true"
         mysql="true"
         github="true"
@@ -70,7 +70,7 @@
         link="https://weather-app-7tx.pages.dev/"
         img="/img/weather_app.png"
         title="Weather App"
-        description="Weather forecast website where you can check the temperature, humidity and wind speed."
+        description="Weather forecast website where you can check the weather"
         javascript="true"
         html="true"
         css="true"
@@ -96,8 +96,10 @@
         img="/img/patrono_freelancer.png"
         title="Patrono Transportes"
         description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
-        vue="true"
         javascript="true"
+        html="true"
+        css="true"
+        php="true"
         web="true"
         web_link="https://patronotransportes.com/"
       />
@@ -106,8 +108,10 @@
         img="/img/Captura de Tela 2023-09-29 às 18.09.33.png"
         title="W-torre Engenharia"
         description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
-        vue="true"
         javascript="true"
+        html="true"
+        css="true"
+        php="true"
         web="true"
         web_link="http://www.rendaz.com.br/wtorre/"
       />
@@ -160,6 +164,7 @@ button:hover {
 .base-cards-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .active {

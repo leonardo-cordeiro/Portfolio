@@ -23,6 +23,7 @@
           <LanguageIcon v-if="tailwind" icon="/icons/tailwindcss-icon.svg" alt="Tailwind" />
           <LanguageIcon v-if="python" icon="/icons/python-icon.svg" alt="Python" />
           <LanguageIcon v-if="mysql" icon="/icons/icons8-mysql-logo.svg" alt="MySql" />
+          <LanguageIcon v-if="php" icon="/icons/php-icon.svg" alt="php" />
         </div>
         <div>
           <a v-if="github" :href="github_link" class="github-link language" target="_blank">
@@ -58,7 +59,8 @@ defineProps({
   web_link: String,
   tailwind: Boolean,
   python: Boolean,
-  mysql: Boolean
+  mysql: Boolean,
+  php: Boolean
 })
 </script>
 
@@ -70,9 +72,7 @@ defineProps({
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  max-height: 400px;
-  width: 30%;
-  height: 100%;
+  width: 25%;
   background-color: #f2f2f2;
 }
 
@@ -109,11 +109,7 @@ defineProps({
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.css {
-  width: 30px;
-  height: 30px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
