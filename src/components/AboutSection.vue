@@ -17,7 +17,7 @@
             its people. My journey is a combination of determination, programming and adventure.
           </p>
           <button class="resume">
-            <a href="src/pdf/ProfileEnglish.pdf" download> Dowload Resume</a>
+            <a href="src/pdf/resumeCV.pdf" download> Dowload Resume</a>
             <div>
               <img class="resume_img" src="/icons/resume.png" alt="resume icon" />
             </div>
