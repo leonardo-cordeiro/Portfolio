@@ -22,7 +22,7 @@
         github_link="https://github.com/arnonrdp/Brasileiro-Ninja"
       />
       <BaseCard
-        link=""
+        link="https://cryptotracker-5hk.pages.dev/"
         img="/img/crypto_Tracker.png"
         title="Crypto Tracker"
         description="Cryptocurrency website, with daily variation in coin prices."
@@ -45,7 +45,7 @@
         github_link="https://github.com/leonardo-cordeiro/finance-app-vue"
       />
       <BaseCard
-        link="/"
+        link="https://leonardodev.pages.dev/"
         img="/img/Captura de Tela 2023-10-14 às 15.16.41.png"
         title="Personal Portfolio"
         description="This is my portfolio page to present my professional and personal projects"

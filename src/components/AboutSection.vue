@@ -5,20 +5,16 @@
         <div class="about-text">
           <h2>A Small Piece of My History...</h2>
           <p>
-            I am Brazilian, and like many compatriots, I have that unwavering determination that
-            characterizes us. When I began my journey in programming, there were moments when I
-            thought about giving up, but as a good Brazilian, that simply isn't an option for me.
-            After a long period of study and dedication, I finally realized that I was making
-            significant progress in the world of programming and was truly getting the hang of it.
-            Today, my passion for programming only increases, and I don't go a day without immersing
-            myself in code.
+            I am a determined Brazilian, who does not let obstacles get me down. Programming was a
+            challenge that I faced with courage and dedication, until I became a competent and
+            passionate professional. Today, I live for the code and have fun with the projects and
+            challenges that it offers me.
           </p>
           <p>
-            Beyond programming, I was a professional athlete in track and field, and I lived in the
-            United States for nearly three years, enriching my worldview. Traveling throughout
-            Brazil allowed me to get to know its diverse regions and incredible people. My journey
-            is a blend of determination, a passion for programming, and a constant desire to explore
-            new horizons.
+            My life was also marked by other experiences that made me grow. I practiced track and
+            field professionally. I lived in the United States for a few years, learning a new
+            language and a new culture. I traveled across Brazil, being amazed by its landscapes and
+            its people. My journey is a combination of determination, programming and adventure.
           </p>
           <button class="resume">
             <a href="src/pdf/ProfileEnglish.pdf" download> Dowload Resume</a>
