@@ -70,7 +70,7 @@ a.site-logo {
 }
 .site-navbar ul li a:hover {
   text-decoration: underline;
-  color: #8a8a8ae2;
+  color: #f2f2f2e2;
 }
 
 .nav-toggler {
@@ -130,7 +130,7 @@ a.site-logo {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #444;
-    background-color: rgba(0, 0, 0, 0.83);
+    background-color: rgba(255, 255, 255, 0.89);
     max-height: 0;
     overflow: hidden;
     transition: 0.3s;
