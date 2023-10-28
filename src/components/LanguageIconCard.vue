@@ -16,10 +16,12 @@ defineProps({
 
 <style scoped>
 .language-icon img {
-  margin-right: 5px;
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 15px;
+  background: #fffdfd82;
   cursor: pointer;
-  z-index: 1;
 }
 </style>

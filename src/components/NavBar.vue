@@ -38,13 +38,11 @@ function closeToggle() {
   margin: 0 auto;
   padding: 0 15px;
   position: fixed;
-  background: linear-gradient(135deg, #3403b7 31%, #07034d 80%);
+  /* background: linear-gradient(135deg, #3403b7 31%, #07034d 80%); */
   z-index: 9999;
+  background-color: #cedfdf;
 }
 
-.navbar-area {
-  background: linear-gradient(135deg, #3403b7 31%, #07034d 80%);
-}
 .site-navbar {
   display: flex;
   justify-content: space-between;
@@ -53,7 +51,7 @@ function closeToggle() {
 a.site-logo {
   font-size: 30px;
   font-weight: 800;
-  color: #fff;
+  color: rgb(72, 72, 72);
   text-decoration: none;
   margin-left: 2rem;
 }
@@ -64,7 +62,7 @@ a.site-logo {
   display: flex;
 }
 .site-navbar ul li a {
-  color: #fff;
+  color: rgb(72, 72, 72);
   padding: 20px;
   display: block;
   text-decoration: none;
@@ -72,7 +70,7 @@ a.site-logo {
 }
 .site-navbar ul li a:hover {
   text-decoration: underline;
-  color: #f2f2f2e2;
+  color: #8a8a8ae2;
 }
 
 .nav-toggler {

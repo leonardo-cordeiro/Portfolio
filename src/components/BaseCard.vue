@@ -24,6 +24,7 @@
           <LanguageIcon v-if="python" icon="/icons/python-icon.svg" alt="Python" />
           <LanguageIcon v-if="mysql" icon="/icons/icons8-mysql-logo.svg" alt="MySql" />
           <LanguageIcon v-if="php" icon="/icons/php-icon.svg" alt="php" />
+          <LanguageIcon v-if="quasar" icon="/icons/quasar-svgrepo-com.svg" alt="php" />
         </div>
         <div>
           <a v-if="github" :href="github_link" class="github-link language" target="_blank">
@@ -60,7 +61,8 @@ defineProps({
   tailwind: Boolean,
   python: Boolean,
   mysql: Boolean,
-  php: Boolean
+  php: Boolean,
+  quasar: Boolean
 })
 </script>
 

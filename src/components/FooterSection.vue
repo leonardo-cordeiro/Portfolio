@@ -13,7 +13,8 @@
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-  background-color: #4800d9;
+  /* background-color: #4800d9; */
+  background-color: #a6c3ce;
 }
 
 .footer p {

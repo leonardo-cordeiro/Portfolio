@@ -6,7 +6,7 @@
     <!-- Introdução -->
     <HomeSection />
 
-    <TesteCarrousel />
+    <!-- <TesteCarrousel /> -->
     <!-- About  -->
     <AboutSectionVue />
 
@@ -24,7 +24,7 @@ import HomeSection from '@/components/HomeSection.vue'
 import NavBar from '@/components/NavBar.vue'
 import PortfolioSectionVue from '@/components/PortfolioSection.vue'
 import FooterSection from './components/FooterSection.vue'
-import TesteCarrousel from './components/TesteCarrousel.vue'
+// import TesteCarrousel from './components/TesteCarrousel.vue'
 </script>
 
 <style>

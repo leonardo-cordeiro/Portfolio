@@ -16,12 +16,12 @@
             language and a new culture. I traveled across Brazil, being amazed by its landscapes and
             its people. My journey is a combination of determination, programming and adventure.
           </p>
-          <button class="resume">
-            <a href="src/pdf/resumeCV.pdf" download> Dowload Resume</a>
+          <!-- <button class="resume">
+            <a href="public/pdf/resumeCV.pdf" download> Dowload Resume</a>
             <div>
               <img class="resume_img" src="/icons/resume.png" alt="resume icon" />
             </div>
-          </button>
+          </button> -->
         </div>
         <div class="about-image">
           <img src="/img/foto_about.jpg" alt="Leonardo Gama" />
@@ -35,9 +35,9 @@
 
 <style scoped>
 .about-section {
-  background-color: #3b1cb7;
   padding: 80px 0;
   text-align: center;
+  background-color: #a9c3b6;
 }
 
 .container {
@@ -53,7 +53,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #ffff;
+  color: #262626ba;
 }
 
 .about-text {
@@ -71,10 +71,11 @@
 
 .about-image img {
   width: 100%;
-  max-width: 550px;
+  max-width: 470px;
   border-radius: 10px;
   margin-top: 20px;
   margin-left: 10rem;
+  background-color: #000000b7;
 }
 
 .resume {

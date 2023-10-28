@@ -136,8 +136,9 @@ const isActive = (section) => activeSection.value === section
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #4800d9;
+  /* background-color: #4800d9; */
   height: 100%;
+  background-color: #b7d1d3;
 }
 
 .buttons {
