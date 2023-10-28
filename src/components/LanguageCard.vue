@@ -39,7 +39,7 @@ defineProps({
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #bbecdf6b;
-  margin-top: 3rem;
+  margin-top: 8rem;
   z-index: 1;
 }
 

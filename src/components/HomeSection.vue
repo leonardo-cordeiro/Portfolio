@@ -50,7 +50,7 @@ import LanguageCardVue from './LanguageCard.vue'
   flex-direction: column;
   align-items: center;
   background-color: #91ac9a;
-  height: 100vh;
+  height: 90vh;
   padding-top: 2rem;
   width: 100%;
 }
@@ -65,11 +65,12 @@ import LanguageCardVue from './LanguageCard.vue'
 
 .content {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 7rem;
+  gap: 8rem;
 }
 
 .text p {
@@ -137,6 +138,9 @@ button {
   }
   .content {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 </style>
