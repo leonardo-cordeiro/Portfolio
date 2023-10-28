@@ -23,5 +23,6 @@ defineProps({
   margin: 0 15px;
   background: #fffdfd82;
   cursor: pointer;
+  z-index: 1;
 }
 </style>
