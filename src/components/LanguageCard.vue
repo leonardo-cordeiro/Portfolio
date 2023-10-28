@@ -40,6 +40,7 @@ defineProps({
   justify-content: space-around;
   background-color: #bbecdf6b;
   margin-top: 3rem;
+  z-index: 1;
 }
 
 .card img {
@@ -49,7 +50,6 @@ defineProps({
   border-radius: 10px;
   margin: 0 15px 10px 0;
   background: #fffdfd82;
-  /* padding: 1px; */
 }
 
 .card img:hover {
