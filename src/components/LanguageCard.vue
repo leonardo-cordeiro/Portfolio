@@ -43,18 +43,16 @@ defineProps({
   z-index: 1;
 }
 
-.card img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 0 15px 10px 0;
-  background: #fffdfd82;
-}
-
 .card img:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: 90vw;
+    margin-top: 1rem;
+  }
 }
 </style>

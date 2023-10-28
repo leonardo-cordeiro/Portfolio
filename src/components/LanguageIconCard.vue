@@ -25,4 +25,12 @@ defineProps({
   cursor: pointer;
   z-index: 1;
 }
+
+@media screen and (max-width: 767px) {
+  .language-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+  }
+}
 </style>

@@ -115,7 +115,7 @@ button {
 
   .wrap {
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 
   .text p {
@@ -132,11 +132,11 @@ button {
     margin-top: 2rem;
   }
   .icons {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     justify-content: center;
   }
   .content {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 </style>
