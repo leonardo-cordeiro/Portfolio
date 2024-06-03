@@ -95,7 +95,7 @@
         link="https://patronotransportes.com/"
         img="/img/patrono_freelancer.png"
         title="Patrono Transportes"
-        description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
+        description="Landing page for a transport company, with a gallery of photos and a contact form."
         javascript="true"
         html="true"
         css="true"
@@ -107,13 +107,25 @@
         link="http://www.rendaz.com.br/wtorre/"
         img="/img/Captura de Tela 2023-09-29 às 18.09.33.png"
         title="W-torre Engenharia"
-        description="Site para fazer diversas pesquisas, como: Tabela Fipe, Feriados, CNPJ..."
+        description="Landing page for a construction company, with a gallery of photos and a contact form."
         javascript="true"
         html="true"
         css="true"
         php="true"
         web="true"
         web_link="http://www.rendaz.com.br/wtorre/"
+      />
+      <BaseCard
+        link="https://golfim.com.br/"
+        img="/img/golfim_freelancer.png"
+        title="Golfim Piscinas"
+        description="Landing page for a pool company, with a contact form and a gallery of photos."
+        javascript="true"
+        html="true"
+        css="true"
+        vue="true"
+        web="true"
+        web_link="https://golfim.com.br/"
       />
     </div>
   </div>

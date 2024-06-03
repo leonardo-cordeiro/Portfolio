@@ -3,7 +3,7 @@
     <div class="intro">
       <div class="wrap">
         <div class="content">
-          <img src="/img/fotoAvatar.png" alt="foto perfil" class="fotoPerfil" />
+          <img src="/img/image.png" alt="foto perfil" class="fotoPerfil" />
           <div class="text">
             <h1>Front-End Developer 👨🏻‍💻</h1>
             <p>
@@ -91,10 +91,9 @@ import LanguageCardVue from './LanguageCard.vue'
 
 .fotoPerfil {
   width: 230px;
-  /* margin-top: 3rem; */
-  /* background-color: #6d9cf3dc; */
   border: 1.5px solid #b9b9b950;
-  border-radius: 30%;
+  border-radius: 20%;
+  padding: 0.5rem;
 }
 
 .icons {
